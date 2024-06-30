@@ -1,31 +1,18 @@
-# Spotify Web Clone
-
-This is a Spotify web application clone built with React and Vite.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Scripts](#scripts)
-- [Dependencies](#dependencies)
-- [DevDependencies](#devdependencies)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+**Frontend repository:**
+[https://github.com/liron28/Rythmix](https://github.com/liron28/Rythmix-backend)
 
 ## Overview
 
-This project is a clone of the Spotify web application. It is built using React for the front-end and Vite for the build tool. The application aims to mimic the look and feel of Spotify, allowing users to browse and play music.
+Rythmix is a web application based by Spotify that allows users to access music, create and share playlists, and manage their music preferences. The app leverages the YouTube Data API for music content, featuring a React frontend and a Node.js backend. Data is stored using MongoDB Atlas.
+
+![](./public/imgs/Rythmix1.jpeg)
 
 ## Features
 
-- Browse music and playlists
-- Play music
-- Responsive design
-- User authentication (to be implemented)
-- Integration with Youtube DATA API v3
-- Search Music via Youtube Search
+- Music Access: Utilize the YouTube Data API to search and play music.
+- Playlists: Create, manage, and share playlists.
+- Database: Store user data and playlists in MongoDB Atlas.
+- User Authentication: Secure user login and registration.
 
 ## Installation
 
@@ -42,38 +29,43 @@ To get started with the project, follow these steps:
     npm install
     ```
 
-## Scripts
+## Technologies Used
 
-Here are the available scripts for this project:
+- **Frontend**: React, Redux, Axios, Sass
+- **Backend**: Node.js, Express
+- **Database**: MongoDB Atlas
+- **API**: YouTube Data API v3
 
-- `dev`: Starts the development server.
-- `predeploy`: Builds the project before deployment.
-- `deploy`: Deploys the project to GitHub Pages.
-- `build`: Builds the project for production.
-- `lint`: Lints the project files.
-- `preview`: Previews the production build.
-- `watch`: Watches for changes in SCSS files and compiles them to CSS.
+## Libaries
 
-You can run these scripts using `npm run <script-name>`.
+- **API**: YouTube Data API v3
+- **Player**: react-player
+  
 
-## Dependencies
+## Prerequisites
 
-- `@emotion/react`: ^11.11.4
-- `@emotion/styled`: ^11.11.5
-- `@mui/material`: ^5.15.19
-- `react`: ^18.2.0
-- `react-dom`: ^18.2.0
-- `react-icons`: ^5.0.1
-- `react-player`: ^2.16.0
-- `react-redux`: ^9.1.0
-- `react-router`: ^6.22.3
-- `react-router-dom`: ^6.22.3
-- `react-svg`: ^16.1.34
-- `redux`: ^5.0.1
-- `sass`: ^1.77.2
+- Node.js (v12.x or later)
+- MongoDB Atlas account
+- YouTube Data API key
 
-## Usage
 
-To start the development server, run:
-```sh
-npm run dev
+## Project Structure
+
+- **client**: Contains the React frontend
+  - **src**
+    - **components**: React components
+    - **redux**: Redux actions and reducers
+    - **services**: API services
+    - **styles**: CSS files
+    - **App.js**: Main App component
+    - **index.js**: Entry point
+- **server**:  Contains the Node.js backend
+  - **src**
+    - **controllers**: Request handlers
+    - **routes**: Express routes
+    - **middlewares**: Custom middlewares
+    - **app.js**: Express app setup
+    - **server.js**: Server entry point
+
+
+
